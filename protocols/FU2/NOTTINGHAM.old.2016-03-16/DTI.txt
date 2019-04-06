@@ -1,0 +1,186 @@
+Proto enable =			"no";
+Proto int array =		(24) 0;
+Proto float array =		(24) 0;
+Multi-transmit =		"no";
+Nucleus =			"H1";
+Coil selection =		"SENSE-Head-8";
+     element selection =	"SENSE";
+     connection =		"d";
+Dual coil =			"no";
+CLEAR =				"yes";
+    body tuned =		"no";
+FOV          RL (mm) =		307;
+             AP (mm) =		307;
+             FH (mm) =		144;
+Voxel size   RL (mm) =		2.3984375;
+             AP (mm) =		2.3984375;
+Slice thickness (mm) =		2.4000001;
+Recon voxel size (mm) =		2.3984375;
+Small FOV imaging =		"no";
+Fold-over suppression =		"no";
+Reconstruction matrix =		128;
+SENSE =				"yes";
+    P reduction (AP) =		2;
+    P os factor =		1;
+k-t BLAST =			"no";
+Stacks =			1;
+    type =			"parallel";
+    slices =			60;
+    slice gap =			"user defined";
+          gap (mm) =		0;
+    slice orientation =		"transverse";
+    fold-over direction =	"AP";
+    fat shift direction =	"A";
+Stack Offc. AP (P=+mm) =	2.18595314;
+            RL (L=+mm) =	-3.7794416;
+            FH (H=+mm) =	29.9283333;
+      Ang.  AP (deg) =		0.529050648;
+            RL (deg) =		8.87057781;
+            FH (deg) =		5.39241314;
+Minimum number of packages =	1;
+Slice scan order =		"default";
+Large table movement =		"no";
+PlanAlign =			"no";
+REST slabs =			0;
+Interactive positioning =	"no";
+Patient position =		"head first";
+        orientation =		"supine";
+Scan type =			"Imaging";
+Scan mode =			"MS";
+    technique =			"SE";
+Multi slice excitation =	"no";
+Modified SE =			"no";
+Acquisition mode =		"cartesian";
+Fast Imaging mode =		"EPI";
+    shot mode =			"single-shot";
+Echoes =			1;
+    partial echo =		"no";
+TE =				"user defined";
+    (ms) =			104.5;
+Flip angle (deg) =		90;
+TR =				"user defined";
+    (ms) =			15000;
+Halfscan =			"yes";
+    factor =			0.745098054;
+Water-fat shift =		"user defined";
+     (pixels) =			21.5;
+Shim =				"auto";
+mDIXON =			"no";
+Fat suppression =		"SPIR";
+   strength =			"strong";
+   frequency offset =		"default";
+Water suppression =		"no";
+Grad. rev. offres. supp. =	"no";
+BB pulse =			"no";
+MTC =				"no";
+Research prepulse =		"no";
+Diffusion mode =		"DTI";
+    sequence =			"SE";
+    gradient duration =		"overplus";
+    gradient overplus =		"no";
+    directional resolution =	"user defined";
+        nr of directions =	32;
+        user defined dirs =	1,
+				(2) 0, 0.493999988, 0.869000018,
+				0, -0.119999997, 0.640999973,
+				0.758000016, 0.91900003, -0.331,
+				-0.214000002, -0.112000003,
+				-0.630999982, 0.768000007,
+				-0.913999975, -0.236000001,
+				0.328999996, 0.680999994,
+				0.303000003, 0.666999996,
+				0.0670000017, 0.998000026,
+				-0.0130000003, 0.917999983,
+				0.152999997, 0.367000014,
+				0.442999989, -0.889999986,
+				0.103, 0.216000006, -0.926999986,
+				-0.307000011, 0.479999989,
+				-0.671000004, -0.564999998,
+				-0.550000012, -0.477999985,
+				0.685000002, -0.700999975,
+				0.693000019, 0.171000004,
+				-0.42899999, -0.00700000022,
+				-0.902999997, -0.699000001,
+				-0.639999986, 0.319999993,
+				0.726000011, 0.0909999982,
+				-0.681999981, 0.389999986,
+				-0.248999998, -0.887000024,
+				-0.172000006, -0.880999982,
+				-0.439999998, -0.610000014,
+				0.640999973, -0.467000008,
+				0.598999977, 0.68900001, 0.409000009,
+				-0.727999985, 0.222000003,
+				-0.648999989, 0.883000016,
+				-0.398000002, 0.248999998,
+				0.319999993, 0.547999978,
+				0.772000015, -0.0439999998,
+				-0.268000007, -0.962000012,
+				0.188999996, -0.876999974,
+				0.442999989, 0.731999993,
+				-0.333000004, -0.593999982,
+				0.308999985, -0.550000012,
+				0.776000023, 0.286000013,
+				0.85799998, -0.426999986,
+				0.859000027, 0.504000008,
+				0.0879999995, -0.107000001,
+				0.215000004, -0.971000016,
+				-0.298000008, -0.178000003,
+				0.938000023, (288) 0;
+    nr of b-factors =		2;
+    b-factor order =		"ascending";
+    max b-factor =		1300;
+    average high b =		"user defined";
+        b-factor averages =	4,
+				(15) 1;
+SAR mode =			"high";
+B1 mode =			"default";
+SAR Patient data =		"auto";
+PNS mode =			"high";
+Gradient mode =			"maximum";
+SofTone mode =			"no";
+Cardiac synchronization =	"no";
+Respiratory compensation =	"no";
+Navigator respiratory comp =	"no";
+Flow compensation =		"no";
+Temporal slice spacing =	"minimal";
+NSA =				1;
+Manual start =			"no";
+Dynamic study =			"no";
+    dyn stabilization =		"yes";
+Arterial Spin labeling =	"no";
+Preparation phases =		"auto";
+Interactive F0 =		"no";
+B0 field map =			"no";
+B1 field map =			"no";
+MIP/MPR =			"no";
+Images =			" M", (3) " no";
+Autoview image =		" M";
+Calculated images =		(4) " no";
+Reference tissue =		"Grey matter";
+EPI 2D phase correction =	"no";
+Preset window contrast =	"soft";
+Reconstruction mode =		"immediate";
+Save raw data =			"no";
+Hardcopy protocol =		"no";
+Ringing filtering =		"default";
+Geometry correction =		"default";
+IF_info_seperator =		0;
+Total scan duration =		"10:21.3";
+Rel. signal level (%) =		100;
+Act. TR (ms) =			"15000";
+Act. TE (ms) =			"105";
+ACQ matrix M x P =		"128 x 128";
+ACQ voxel MPS (mm) =		"2.40 / 2.40 / 2.40";
+REC voxel MPS (mm) =		"2.40 / 2.40 / 2.40";
+Scan percentage (%) =		100;
+Packages =			1;
+Min. slice gap (mm) =		0;
+EPI factor =			67;
+WFS (pix) / BW (Hz) =		"21.500 / 20.2";
+BW in EPI freq. dir. (Hz) =	"1765.2";
+Min. TR (ms) =			"8660";
+SAR / head =			"<  15 %";
+Whole body / level =		"0.0 W/kg / normal";
+B1 rms =			"0.90 uT";
+PNS / level =			"63 % / normal";
+Sound Pressure Level (dB) =	15.2915077;

@@ -1,0 +1,51 @@
+faces task
+-----------
+
+dcm4che.string.1.00280030 = 3.4\\3.4             # PixelSpacing in mm
+dcm4che.string.1.00180088 = 3.4                  # SpacingBetweenSlices in mm
+dcm4che.string.1.00180050 = 2.4                  # SliceThickness in mm
+dcm4che.string.1.00200110 = 2.2                  # TemporalResolution in s
+dcm4che.string.1.00201002 = 6400                 # ImagesInAcquisition
+dcm4che.string.1.00280011 = 64                   # Columns
+dcm4che.string.1.00280010 = 64                   # Rows
+dcm4che.string.1.00200105 = 160                  # NumberOfTemporalPositions
+dcm4che.string.1.00080070 = Bruker               # Manufacturer
+dcm4che.string.1.00080080 = PTB                  # InstitutionName
+dcm4che.string.1.00180020 = EP                   # ScanningSequence
+dcm4che.string.1.00180080 = 2200                  # TR in ms
+dcm4che.string.1.00180081 = 30                    # TE in ms
+dcm4che.string.1.0008103E = EPI faces             # SeriesDescription
+dcm4che.string.1.00080090 = Jan Reuter            # ReferringPhysiciansName
+dcm4che.string.1.00181314 = 75                    # FlipAngle in degree
+unknown tag               = Descending            # slice order
+
+global task
+------------
+
+ditto but:
+dcm4che.string.1.00201002 = 5600                 # ImagesInAcquisition
+dcm4che.string.1.00200105 = 140                  # NumberOfTemporalPositions
+
+
+MID task
+------------
+
+ditto but:
+dcm4che.string.1.00201002 = 12000                # ImagesInAcquisition
+dcm4che.string.1.00200105 = 300                  # NumberOfTemporalPositions
+
+
+stop task
+------------
+
+ditto but:
+dcm4che.string.1.00201002 = 17760                # ImagesInAcquisition
+dcm4che.string.1.00200105 = 444                  # NumberOfTemporalPositions
+
+
+reward task
+------------
+
+ditto but:
+dcm4che.string.1.00201002 = 12000                # ImagesInAcquisition
+dcm4che.string.1.00200105 = 300                  # NumberOfTemporalPositions

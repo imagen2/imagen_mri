@@ -1,0 +1,2725 @@
+set PROTNAME "IMAGEN_v9"
+set REVNO "3"
+set SCANNUM "0"
+set SERIESNUM "8"
+set TABENTRY "None"
+proc series1 {} {
+    global ENTRY
+    global POSITION
+    global ANREF
+    global COIL
+    global PLANE
+    global SEDESCFLAG
+    global SEDESC
+    global GRADMODE
+    global IMODE
+    global PSEQ
+    global IOPT
+    global PLUG
+    global PSDNAME
+    global MONSAR
+    global IEC_ACCEPT
+    global FILTCHOICE
+    global BWRT
+    global SLPERLOC
+    global ACQORDER
+    global DELACQ
+    global NUMSEGMENT
+    global SATLOCX1
+    global SATLOCX2
+    global SATLOCY1
+    global SATLOCY2
+    global SATLOCZ1
+    global SATLOCZ2
+    global SATTHICKX1
+    global SATTHICKX2
+    global SATTHICKY1
+    global SATTHICKY2
+    global SATTHICKZ1
+    global SATTHICKZ2
+    global CONCATSAT
+    global TAG_SPACE
+    global TAG_TYPE
+    global SUPPTQ
+    global COLLAPSE
+    global PROJECTION
+    global FLAX
+    global ADDLIMG
+    global FLRECON
+    global RAMPPULSE
+    global VENC
+    global USERCV0
+    global USERCV1
+    global USERCV2
+    global USERCV3
+    global USERCV4
+    global USERCV5
+    global USERCV6
+    global USERCV7
+    global USERCV8
+    global USERCV9
+    global USERCV10
+    global USERCV11
+    global USERCV12
+    global USERCV13
+    global USERCV14
+    global USERCV15
+    global USERCV16
+    global USERCV17
+    global USERCV18
+    global USERCV19
+    global USERCV20
+    global USERCV21
+    global USERCV22
+    global USERCV23
+    global USERCV24
+    global USERCV_MASK
+    global BVALUE
+    global OPTIMIZED_TE
+    global DFAX
+    global DIFNUMDIRS
+    global DIFNUMT2
+    global DUALSPINECHO
+    global DIFPROCTYPE
+    global REOPT
+    global FLIPANG
+    global TE
+    global TE2
+    global NECHO
+    global TR
+    global TI
+    global ETL
+    global NUMSHOTS
+    global BSP_TI
+    global BPM
+    global AUTOTRGTYPE
+    global TRGTYPE
+    global PDGMSTR
+    global PDGMUID
+    global INITSTATE
+    global PSDTRIG
+    global SLICEORDER
+    global VIEWORDER
+    global TRREST
+    global TRACTIVE
+    global DUMACQ
+    global REPTIME
+    global TDEL
+    global MINTDEL
+    global AUTOTRIGWIN
+    global TRIGWIN
+    global INTRDEL
+    global PHASESELECT
+    global AUTOCPHASE
+    global CPHASE
+    global CSLICE
+    global VPS
+    global RESPRATE
+    global RTEFFTR
+    global TRIGPOINT
+    global RESPTRGWIN
+    global RESPINTRDEL
+    global FOV
+    global SLTHICK
+    global SPC
+    global SLABLOC
+    global OVLPLOC
+    global GRXOPT
+    global SLOC1
+    global SLOC2
+    global SLOC3
+    global ELOC1
+    global ELOC2
+    global ELOC3
+    global CLOC1
+    global CLOC2
+    global CLOC3
+    global SL3PLANE
+    global FOVCNT1
+    global FOVCNT2
+    global SCANLOCS
+    global NOSLC
+    global SP_SLOC1
+    global SP_SLOC2
+    global SP_SLOC3
+    global SP_ELOC1
+    global SP_ELOC2
+    global SP_ELOC3
+    global TRACKLEN
+    global TRACKTHICK
+    global CINEPHASE
+    global CINESLICE
+    global MATRIXX
+    global MATRIXY
+    global SWAPPF
+    global NEX
+    global B4PAUSE
+    global CONTRAST
+    global CONTAG
+    global CONTAM
+    global TBLDELTA
+    global PHASEFOV
+    global RBW
+    global RBW2
+    global AUTOSHIM
+    global PHASECORR
+    global AUTOCF
+    global FLDIR
+    global NUMOPTEMPPHASES
+    global DELMASKACQ
+    global PAUSEDELMASKACQ
+    global MX_PROT
+    global AUTOSUBOPTIONS
+    global AUTOSCIC
+    global TOTALNOSTATION
+    global STATION
+    set ENTRY "Head First"
+    set POSITION "Supine"
+    set ANREF ""
+    set COIL "8HRBRAIN"
+    set PLANE "3-PLANE"
+    set SEDESCFLAG "1"
+    set SEDESC "LOCALIZER"
+    set GRADMODE ""
+    set IMODE "2D"
+    set PSEQ "Localizer"
+    set IOPT "None"
+    set PLUG "45"
+    set PSDNAME ""
+    set MONSAR "y"
+    set IEC_ACCEPT ""
+    set FILTCHOICE "None"
+    set BWRT "-1"
+    set SLPERLOC ""
+    set ACQORDER ""
+    set DELACQ ""
+    set NUMSEGMENT ""
+    set SATLOCX1 ""
+    set SATLOCX2 ""
+    set SATLOCY1 ""
+    set SATLOCY2 ""
+    set SATLOCZ1 ""
+    set SATLOCZ2 ""
+    set SATTHICKX1 ""
+    set SATTHICKX2 ""
+    set SATTHICKY1 ""
+    set SATTHICKY2 ""
+    set SATTHICKZ1 ""
+    set SATTHICKZ2 ""
+    set CONCATSAT ""
+    set TAG_SPACE "7"
+    set TAG_TYPE ""
+    set SUPPTQ ""
+    set COLLAPSE ""
+    set PROJECTION ""
+    set FLAX ""
+    set ADDLIMG ""
+    set FLRECON ""
+    set RAMPPULSE ""
+    set VENC ""
+    set USERCV0 ""
+    set USERCV1 ""
+    set USERCV2 ""
+    set USERCV3 ""
+    set USERCV4 ""
+    set USERCV5 ""
+    set USERCV6 ""
+    set USERCV7 ""
+    set USERCV8 ""
+    set USERCV9 ""
+    set USERCV10 ""
+    set USERCV11 ""
+    set USERCV12 ""
+    set USERCV13 ""
+    set USERCV14 ""
+    set USERCV15 ""
+    set USERCV16 ""
+    set USERCV17 ""
+    set USERCV18 ""
+    set USERCV19 ""
+    set USERCV20 ""
+    set USERCV21 ""
+    set USERCV22 ""
+    set USERCV23 ""
+    set USERCV24 ""
+    set USERCV_MASK "0"
+    set BVALUE ""
+    set OPTIMIZED_TE ""
+    set DFAX ""
+    set DIFNUMDIRS ""
+    set DIFNUMT2 ""
+    set DUALSPINECHO ""
+    set DIFPROCTYPE ""
+    set REOPT ""
+    set FLIPANG ""
+    set TE ""
+    set TE2 ""
+    set NECHO ""
+    set TR ""
+    set TI ""
+    set ETL ""
+    set NUMSHOTS ""
+    set BSP_TI ""
+    set BPM ""
+    set AUTOTRGTYPE "0"
+    set TRGTYPE ""
+    set PDGMSTR ""
+    set PDGMUID ""
+    set INITSTATE ""
+    set PSDTRIG ""
+    set SLICEORDER ""
+    set VIEWORDER ""
+    set TRREST ""
+    set TRACTIVE ""
+    set DUMACQ ""
+    set REPTIME ""
+    set TDEL ""
+    set MINTDEL ""
+    set AUTOTRIGWIN "0"
+    set TRIGWIN ""
+    set INTRDEL ""
+    set PHASESELECT ""
+    set AUTOCPHASE ""
+    set CPHASE ""
+    set CSLICE ""
+    set VPS ""
+    set RESPRATE ""
+    set RTEFFTR ""
+    set TRIGPOINT ""
+    set RESPTRGWIN ""
+    set RESPINTRDEL ""
+    set FOV "24"
+    set SLTHICK "5.0"
+    set SPC "0.5"
+    set SLABLOC ""
+    set OVLPLOC ""
+    set GRXOPT ""
+    set SLOC1 ""
+    set SLOC2 ""
+    set SLOC3 ""
+    set ELOC1 ""
+    set ELOC2 ""
+    set ELOC3 ""
+    set CLOC1 "0.0"
+    set CLOC2 "0.0"
+    set CLOC3 "0.0"
+    set SL3PLANE "1"
+    set FOVCNT1 ""
+    set FOVCNT2 ""
+    set SCANLOCS ""
+    set NOSLC ""
+    set SP_SLOC1 ""
+    set SP_SLOC2 ""
+    set SP_SLOC3 ""
+    set SP_ELOC1 ""
+    set SP_ELOC2 ""
+    set SP_ELOC3 ""
+    set TRACKLEN ""
+    set TRACKTHICK ""
+    set CINEPHASE ""
+    set CINESLICE ""
+    set MATRIXX "256"
+    set MATRIXY "128"
+    set SWAPPF "Unswap"
+    set NEX "1.00"
+    set B4PAUSE ""
+    set CONTRAST "No"
+    set CONTAG ""
+    set CONTAM "Yes   "
+    set TBLDELTA "0.00"
+    set PHASEFOV "1.00"
+    set RBW ""
+    set RBW2 ""
+    set AUTOSHIM "Yes"
+    set PHASECORR "No"
+    set AUTOCF "Water"
+    set FLDIR ""
+    set NUMOPTEMPPHASES ""
+    set DELMASKACQ ""
+    set PAUSEDELMASKACQ "1"
+    set MX_PROT ""
+    set AUTOSUBOPTIONS "0"
+    set AUTOSCIC "0"
+    set TOTALNOSTATION "0"
+    set STATION "0"
+}
+proc series2 {} {
+    global ENTRY
+    global POSITION
+    global ANREF
+    global COIL
+    global PLANE
+    global SEDESCFLAG
+    global SEDESC
+    global GRADMODE
+    global IMODE
+    global PSEQ
+    global IOPT
+    global PLUG
+    global PSDNAME
+    global MONSAR
+    global IEC_ACCEPT
+    global SLPERLOC
+    global ACQORDER
+    global DELACQ
+    global NUMSEGMENT
+    global SATLOCX1
+    global SATLOCX2
+    global SATLOCY1
+    global SATLOCY2
+    global SATLOCZ1
+    global SATLOCZ2
+    global SATTHICKX1
+    global SATTHICKX2
+    global SATTHICKY1
+    global SATTHICKY2
+    global SATTHICKZ1
+    global SATTHICKZ2
+    global CONCATSAT
+    global TAG_SPACE
+    global TAG_TYPE
+    global SUPPTQ
+    global COLLAPSE
+    global PROJECTION
+    global FLAX
+    global ADDLIMG
+    global FLRECON
+    global RAMPPULSE
+    global VENC
+    global USERCV_MASK
+    global USERCV0
+    global USERCV1
+    global USERCV2
+    global USERCV3
+    global USERCV4
+    global USERCV5
+    global USERCV6
+    global USERCV7
+    global USERCV8
+    global USERCV9
+    global USERCV10
+    global USERCV11
+    global USERCV12
+    global USERCV13
+    global USERCV14
+    global USERCV15
+    global USERCV16
+    global USERCV17
+    global USERCV18
+    global USERCV19
+    global USERCV20
+    global USERCV21
+    global USERCV22
+    global USERCV23
+    global USERCV24
+    global AUTOSCIC
+    global FILTCHOICE
+    global BVALUE
+    global OPTIMIZED_TE
+    global DIFNUMDIRS
+    global DIFNUMT2
+    global DUALSPINECHO
+    global DIFPROCTYPE
+    global DFAX
+    global REOPT
+    global FLIPANG
+    global TE
+    global TE2
+    global NECHO
+    global TR
+    global TI
+    global ETL
+    global NUMSHOTS
+    global BSP_TI
+    global BPM
+    global AUTOTRGTYPE
+    global TRGTYPE
+    global BWRT
+    global PDGMSTR
+    global PDGMUID
+    global INITSTATE
+    global PSDTRIG
+    global SLICEORDER
+    global VIEWORDER
+    global TRREST
+    global TRACTIVE
+    global DUMACQ
+    global REPTIME
+    global TDEL
+    global MINTDEL
+    global AUTOTRIGWIN
+    global TRIGWIN
+    global INTRDEL
+    global PHASESELECT
+    global AUTOCPHASE
+    global CPHASE
+    global CSLICE
+    global VPS
+    global RESPRATE
+    global RTEFFTR
+    global TRIGPOINT
+    global RESPTRGWIN
+    global RESPINTRDEL
+    global FOV
+    global SLTHICK
+    global SPC
+    global SLABLOC
+    global OVLPLOC
+    global GRXOPT
+    global SLOC1
+    global SLOC2
+    global SLOC3
+    global ELOC1
+    global ELOC2
+    global ELOC3
+    global CLOC1
+    global CLOC2
+    global CLOC3
+    global SL3PLANE
+    global FOVCNT1
+    global FOVCNT2
+    global SCANLOCS
+    global NOSLC
+    global SP_SLOC1
+    global SP_SLOC2
+    global SP_SLOC3
+    global SP_ELOC1
+    global SP_ELOC2
+    global SP_ELOC3
+    global TRACKLEN
+    global TRACKTHICK
+    global CINEPHASE
+    global CINESLICE
+    global MATRIXX
+    global MATRIXY
+    global SWAPPF
+    global NEX
+    global B4PAUSE
+    global CONTRAST
+    global CONTAG
+    global CONTAM
+    global TBLDELTA
+    global PHASEFOV
+    global AUTOCF
+    global RBW
+    global RBW2
+    global AUTOSHIM
+    global PHASECORR
+    global FLDIR
+    global NUMOPTEMPPHASES
+    global DELMASKACQ
+    global PAUSEDELMASKACQ
+    global MX_PROT
+    global AUTOSUBOPTIONS
+    global TOTALNOSTATION
+    global STATION
+    set ENTRY "Head First"
+    set POSITION "Supine"
+    set ANREF "NA"
+    set COIL "8HRBRAIN"
+    set PLANE "AXIAL"
+    set SEDESCFLAG "1"
+    set SEDESC "ASSET Cal"
+    set GRADMODE ""
+    set IMODE "2D"
+    set PSEQ "Gradient Echo"
+    set IOPT "Fast, Calib"
+    set PLUG "5"
+    set PSDNAME ""
+    set MONSAR "y"
+    set IEC_ACCEPT ""
+    set SLPERLOC ""
+    set ACQORDER ""
+    set DELACQ ""
+    set NUMSEGMENT ""
+    set SATLOCX1 ""
+    set SATLOCX2 ""
+    set SATLOCY1 ""
+    set SATLOCY2 ""
+    set SATLOCZ1 ""
+    set SATLOCZ2 ""
+    set SATTHICKX1 ""
+    set SATTHICKX2 ""
+    set SATTHICKY1 ""
+    set SATTHICKY2 ""
+    set SATTHICKZ1 ""
+    set SATTHICKZ2 ""
+    set CONCATSAT ""
+    set TAG_SPACE "7"
+    set TAG_TYPE "None"
+    set SUPPTQ ""
+    set COLLAPSE ""
+    set PROJECTION ""
+    set FLAX ""
+    set ADDLIMG ""
+    set FLRECON ""
+    set RAMPPULSE ""
+    set VENC ""
+    set USERCV_MASK "0"
+    set USERCV0 ""
+    set USERCV1 ""
+    set USERCV2 ""
+    set USERCV3 ""
+    set USERCV4 ""
+    set USERCV5 ""
+    set USERCV6 ""
+    set USERCV7 ""
+    set USERCV8 ""
+    set USERCV9 ""
+    set USERCV10 ""
+    set USERCV11 ""
+    set USERCV12 ""
+    set USERCV13 ""
+    set USERCV14 ""
+    set USERCV15 ""
+    set USERCV16 ""
+    set USERCV17 ""
+    set USERCV18 ""
+    set USERCV19 ""
+    set USERCV20 ""
+    set USERCV21 ""
+    set USERCV22 ""
+    set USERCV23 ""
+    set USERCV24 ""
+    set AUTOSCIC "0"
+    set FILTCHOICE "None"
+    set BVALUE ""
+    set OPTIMIZED_TE ""
+    set DIFNUMDIRS ""
+    set DIFNUMT2 ""
+    set DUALSPINECHO ""
+    set DIFPROCTYPE ""
+    set DFAX ""
+    set REOPT ""
+    set FLIPANG ""
+    set TE ""
+    set TE2 ""
+    set NECHO "1"
+    set TR ""
+    set TI ""
+    set ETL ""
+    set NUMSHOTS ""
+    set BSP_TI ""
+    set BPM ""
+    set AUTOTRGTYPE "0"
+    set TRGTYPE ""
+    set BWRT "-1"
+    set PDGMSTR "None"
+    set PDGMUID ""
+    set INITSTATE ""
+    set PSDTRIG ""
+    set SLICEORDER ""
+    set VIEWORDER ""
+    set TRREST ""
+    set TRACTIVE ""
+    set DUMACQ ""
+    set REPTIME ""
+    set TDEL ""
+    set MINTDEL ""
+    set AUTOTRIGWIN "0"
+    set TRIGWIN ""
+    set INTRDEL ""
+    set PHASESELECT ""
+    set AUTOCPHASE ""
+    set CPHASE ""
+    set CSLICE ""
+    set VPS ""
+    set RESPRATE ""
+    set RTEFFTR ""
+    set TRIGPOINT ""
+    set RESPTRGWIN ""
+    set RESPINTRDEL ""
+    set FOV "30"
+    set SLTHICK "8.0"
+    set SPC "0.0"
+    set SLABLOC ""
+    set OVLPLOC ""
+    set GRXOPT "0"
+    set SLOC1 "I112.0"
+    set SLOC2 ""
+    set SLOC3 ""
+    set ELOC1 "S112.0"
+    set ELOC2 "0.0"
+    set ELOC3 "A20.5"
+    set CLOC1 ""
+    set CLOC2 ""
+    set CLOC3 ""
+    set SL3PLANE ""
+    set FOVCNT1 "0.0"
+    set FOVCNT2 "A20.5"
+    set SCANLOCS ""
+    set NOSLC "29"
+    set SP_SLOC1 ""
+    set SP_SLOC2 ""
+    set SP_SLOC3 ""
+    set SP_ELOC1 ""
+    set SP_ELOC2 ""
+    set SP_ELOC3 ""
+    set TRACKLEN ""
+    set TRACKTHICK ""
+    set CINEPHASE ""
+    set CINESLICE ""
+    set MATRIXX ""
+    set MATRIXY ""
+    set SWAPPF "A/P"
+    set NEX ""
+    set B4PAUSE ""
+    set CONTRAST "No"
+    set CONTAG ""
+    set CONTAM "Yes   "
+    set TBLDELTA "0.00"
+    set PHASEFOV ""
+    set AUTOCF "Water"
+    set RBW ""
+    set RBW2 ""
+    set AUTOSHIM "Yes"
+    set PHASECORR "No"
+    set FLDIR ""
+    set NUMOPTEMPPHASES ""
+    set DELMASKACQ ""
+    set PAUSEDELMASKACQ "1"
+    set MX_PROT ""
+    set AUTOSUBOPTIONS "0"
+    set TOTALNOSTATION "0"
+    set STATION "0"
+}
+proc series3 {} {
+    global ENTRY
+    global POSITION
+    global ANREF
+    global COIL
+    global PLANE
+    global SEDESCFLAG
+    global SEDESC
+    global GRADMODE
+    global IMODE
+    global PSEQ
+    global IOPT
+    global PLUG
+    global PSDNAME
+    global MONSAR
+    global IEC_ACCEPT
+    global SLPERLOC
+    global ACQORDER
+    global DELACQ
+    global NUMSEGMENT
+    global SATLOCX1
+    global SATLOCX2
+    global SATLOCY1
+    global SATLOCY2
+    global SATLOCZ1
+    global SATLOCZ2
+    global SATTHICKX1
+    global SATTHICKX2
+    global SATTHICKY1
+    global SATTHICKY2
+    global SATTHICKZ1
+    global SATTHICKZ2
+    global CONCATSAT
+    global TAG_SPACE
+    global TAG_TYPE
+    global SUPPTQ
+    global COLLAPSE
+    global PROJECTION
+    global FLAX
+    global ADDLIMG
+    global FLRECON
+    global RAMPPULSE
+    global VENC
+    global USERCV_MASK
+    global USERCV0
+    global USERCV1
+    global USERCV2
+    global USERCV3
+    global USERCV4
+    global USERCV5
+    global USERCV6
+    global USERCV7
+    global USERCV8
+    global USERCV9
+    global USERCV10
+    global USERCV11
+    global USERCV12
+    global USERCV13
+    global USERCV14
+    global USERCV15
+    global USERCV16
+    global USERCV17
+    global USERCV18
+    global USERCV19
+    global USERCV20
+    global USERCV21
+    global USERCV22
+    global USERCV23
+    global USERCV24
+    global AUTOSCIC
+    global FILTCHOICE
+    global BVALUE
+    global OPTIMIZED_TE
+    global DIFNUMDIRS
+    global DIFNUMT2
+    global DUALSPINECHO
+    global DIFPROCTYPE
+    global DFAX
+    global REOPT
+    global FLIPANG
+    global TE
+    global TE2
+    global NECHO
+    global TR
+    global TI
+    global ETL
+    global NUMSHOTS
+    global BSP_TI
+    global BPM
+    global AUTOTRGTYPE
+    global TRGTYPE
+    global BWRT
+    global PDGMSTR
+    global PDGMUID
+    global INITSTATE
+    global PSDTRIG
+    global SLICEORDER
+    global VIEWORDER
+    global TRREST
+    global TRACTIVE
+    global DUMACQ
+    global REPTIME
+    global TDEL
+    global MINTDEL
+    global AUTOTRIGWIN
+    global TRIGWIN
+    global INTRDEL
+    global PHASESELECT
+    global AUTOCPHASE
+    global CPHASE
+    global CSLICE
+    global VPS
+    global RESPRATE
+    global RTEFFTR
+    global TRIGPOINT
+    global RESPTRGWIN
+    global RESPINTRDEL
+    global FOV
+    global SLTHICK
+    global SPC
+    global SLABLOC
+    global OVLPLOC
+    global GRXOPT
+    global SLOC1
+    global SLOC2
+    global SLOC3
+    global ELOC1
+    global ELOC2
+    global ELOC3
+    global CLOC1
+    global CLOC2
+    global CLOC3
+    global SL3PLANE
+    global FOVCNT1
+    global FOVCNT2
+    global SCANLOCS
+    global NOSLC
+    global SP_SLOC1
+    global SP_SLOC2
+    global SP_SLOC3
+    global SP_ELOC1
+    global SP_ELOC2
+    global SP_ELOC3
+    global TRACKLEN
+    global TRACKTHICK
+    global CINEPHASE
+    global CINESLICE
+    global MATRIXX
+    global MATRIXY
+    global SWAPPF
+    global NEX
+    global B4PAUSE
+    global CONTRAST
+    global CONTAG
+    global CONTAM
+    global TBLDELTA
+    global PHASEFOV
+    global AUTOCF
+    global RBW
+    global RBW2
+    global AUTOSHIM
+    global PHASECORR
+    global FLDIR
+    global NUMOPTEMPPHASES
+    global DELMASKACQ
+    global PAUSEDELMASKACQ
+    global MX_PROT
+    global AUTOSUBOPTIONS
+    global TOTALNOSTATION
+    global STATION
+    set ENTRY "Head First"
+    set POSITION "Supine"
+    set ANREF "NA"
+    set COIL "8HRBRAIN"
+    set PLANE "OBLIQUE"
+    set SEDESCFLAG "1"
+    set SEDESC "AX T2 FR-FSE 4mm 320 TE60"
+    set GRADMODE ""
+    set IMODE "2D"
+    set PSEQ "FRFSE-XL"
+    set IOPT "FC, TRF, Fast, ZIP512, Asset, FR"
+    set PLUG "23"
+    set PSDNAME ""
+    set MONSAR "y"
+    set IEC_ACCEPT ""
+    set SLPERLOC ""
+    set ACQORDER ""
+    set DELACQ ""
+    set NUMSEGMENT ""
+    set SATLOCX1 ""
+    set SATLOCX2 ""
+    set SATLOCY1 ""
+    set SATLOCY2 ""
+    set SATLOCZ1 ""
+    set SATLOCZ2 ""
+    set SATTHICKX1 ""
+    set SATTHICKX2 ""
+    set SATTHICKY1 ""
+    set SATTHICKY2 ""
+    set SATTHICKZ1 ""
+    set SATTHICKZ2 ""
+    set CONCATSAT ""
+    set TAG_SPACE "7"
+    set TAG_TYPE "None"
+    set SUPPTQ ""
+    set COLLAPSE ""
+    set PROJECTION ""
+    set FLAX ""
+    set ADDLIMG ""
+    set FLRECON ""
+    set RAMPPULSE ""
+    set VENC ""
+    set USERCV_MASK "192"
+    set USERCV0 ""
+    set USERCV1 ""
+    set USERCV2 ""
+    set USERCV3 ""
+    set USERCV4 ""
+    set USERCV5 ""
+    set USERCV6 "0.00"
+    set USERCV7 "0.00"
+    set USERCV8 ""
+    set USERCV9 ""
+    set USERCV10 ""
+    set USERCV11 ""
+    set USERCV12 ""
+    set USERCV13 ""
+    set USERCV14 ""
+    set USERCV15 ""
+    set USERCV16 ""
+    set USERCV17 ""
+    set USERCV18 ""
+    set USERCV19 ""
+    set USERCV20 ""
+    set USERCV21 ""
+    set USERCV22 ""
+    set USERCV23 ""
+    set USERCV24 ""
+    set AUTOSCIC "0"
+    set FILTCHOICE "None"
+    set BVALUE ""
+    set OPTIMIZED_TE ""
+    set DIFNUMDIRS ""
+    set DIFNUMT2 ""
+    set DUALSPINECHO ""
+    set DIFPROCTYPE ""
+    set DFAX ""
+    set REOPT ""
+    set FLIPANG ""
+    set TE "60.0"
+    set TE2 ""
+    set NECHO "1"
+    set TR "4585.0"
+    set TI ""
+    set ETL "19"
+    set NUMSHOTS ""
+    set BSP_TI ""
+    set BPM ""
+    set AUTOTRGTYPE "0"
+    set TRGTYPE ""
+    set BWRT "-1"
+    set PDGMSTR "None"
+    set PDGMUID ""
+    set INITSTATE ""
+    set PSDTRIG ""
+    set SLICEORDER ""
+    set VIEWORDER ""
+    set TRREST ""
+    set TRACTIVE ""
+    set DUMACQ ""
+    set REPTIME ""
+    set TDEL ""
+    set MINTDEL ""
+    set AUTOTRIGWIN "0"
+    set TRIGWIN ""
+    set INTRDEL ""
+    set PHASESELECT ""
+    set AUTOCPHASE ""
+    set CPHASE ""
+    set CSLICE ""
+    set VPS ""
+    set RESPRATE ""
+    set RTEFFTR ""
+    set TRIGPOINT ""
+    set RESPTRGWIN ""
+    set RESPINTRDEL ""
+    set FOV "24"
+    set SLTHICK "4.0"
+    set SPC "0.0"
+    set SLABLOC ""
+    set OVLPLOC ""
+    set GRXOPT ""
+    set SLOC1 "0.0"
+    set SLOC2 "A16.8"
+    set SLOC3 "I72.6"
+    set ELOC1 "0.0"
+    set ELOC2 "A16.9"
+    set ELOC3 "S67.4"
+    set CLOC1 ""
+    set CLOC2 ""
+    set CLOC3 ""
+    set SL3PLANE ""
+    set FOVCNT1 ""
+    set FOVCNT2 ""
+    set SCANLOCS ""
+    set NOSLC "36"
+    set SP_SLOC1 ""
+    set SP_SLOC2 ""
+    set SP_SLOC3 ""
+    set SP_ELOC1 ""
+    set SP_ELOC2 ""
+    set SP_ELOC3 ""
+    set TRACKLEN ""
+    set TRACKTHICK ""
+    set CINEPHASE ""
+    set CINESLICE ""
+    set MATRIXX "320"
+    set MATRIXY "320"
+    set SWAPPF "A/P"
+    set NEX "1.00"
+    set B4PAUSE "0"
+    set CONTRAST "No"
+    set CONTAG ""
+    set CONTAM "Yes   "
+    set TBLDELTA "0.00"
+    set PHASEFOV "0.75"
+    set AUTOCF "Water"
+    set RBW "25.00"
+    set RBW2 ""
+    set AUTOSHIM "Yes"
+    set PHASECORR "No"
+    set FLDIR "Freq"
+    set NUMOPTEMPPHASES ""
+    set DELMASKACQ ""
+    set PAUSEDELMASKACQ "1"
+    set MX_PROT ""
+    set AUTOSUBOPTIONS "0"
+    set TOTALNOSTATION "0"
+    set STATION "0"
+}
+proc series4 {} {
+    global ENTRY
+    global POSITION
+    global ANREF
+    global COIL
+    global PLANE
+    global SEDESCFLAG
+    global SEDESC
+    global GRADMODE
+    global IMODE
+    global PSEQ
+    global IOPT
+    global PLUG
+    global PSDNAME
+    global MONSAR
+    global IEC_ACCEPT
+    global FILTCHOICE
+    global BWRT
+    global SLPERLOC
+    global ACQORDER
+    global DELACQ
+    global NUMSEGMENT
+    global SATLOCX1
+    global SATLOCX2
+    global SATLOCY1
+    global SATLOCY2
+    global SATLOCZ1
+    global SATLOCZ2
+    global SATTHICKX1
+    global SATTHICKX2
+    global SATTHICKY1
+    global SATTHICKY2
+    global SATTHICKZ1
+    global SATTHICKZ2
+    global CONCATSAT
+    global TAG_SPACE
+    global TAG_TYPE
+    global SUPPTQ
+    global COLLAPSE
+    global PROJECTION
+    global FLAX
+    global ADDLIMG
+    global FLRECON
+    global RAMPPULSE
+    global VENC
+    global USERCV0
+    global USERCV1
+    global USERCV2
+    global USERCV3
+    global USERCV4
+    global USERCV5
+    global USERCV6
+    global USERCV7
+    global USERCV8
+    global USERCV9
+    global USERCV10
+    global USERCV11
+    global USERCV12
+    global USERCV13
+    global USERCV14
+    global USERCV15
+    global USERCV16
+    global USERCV17
+    global USERCV18
+    global USERCV19
+    global USERCV20
+    global USERCV21
+    global USERCV22
+    global USERCV23
+    global USERCV24
+    global USERCV_MASK
+    global BVALUE
+    global OPTIMIZED_TE
+    global DFAX
+    global DIFNUMDIRS
+    global DIFNUMT2
+    global DUALSPINECHO
+    global DIFPROCTYPE
+    global REOPT
+    global FLIPANG
+    global TE
+    global TE2
+    global NECHO
+    global TR
+    global TI
+    global ETL
+    global NUMSHOTS
+    global BSP_TI
+    global BPM
+    global AUTOTRGTYPE
+    global TRGTYPE
+    global PDGMSTR
+    global PDGMUID
+    global INITSTATE
+    global PSDTRIG
+    global SLICEORDER
+    global VIEWORDER
+    global TRREST
+    global TRACTIVE
+    global DUMACQ
+    global REPTIME
+    global TDEL
+    global MINTDEL
+    global AUTOTRIGWIN
+    global TRIGWIN
+    global INTRDEL
+    global PHASESELECT
+    global AUTOCPHASE
+    global CPHASE
+    global CSLICE
+    global VPS
+    global RESPRATE
+    global RTEFFTR
+    global TRIGPOINT
+    global RESPTRGWIN
+    global RESPINTRDEL
+    global FOV
+    global SLTHICK
+    global SPC
+    global SLABLOC
+    global OVLPLOC
+    global GRXOPT
+    global SLOC1
+    global SLOC2
+    global SLOC3
+    global ELOC1
+    global ELOC2
+    global ELOC3
+    global CLOC1
+    global CLOC2
+    global CLOC3
+    global SL3PLANE
+    global FOVCNT1
+    global FOVCNT2
+    global SCANLOCS
+    global NOSLC
+    global SP_SLOC1
+    global SP_SLOC2
+    global SP_SLOC3
+    global SP_ELOC1
+    global SP_ELOC2
+    global SP_ELOC3
+    global TRACKLEN
+    global TRACKTHICK
+    global CINEPHASE
+    global CINESLICE
+    global MATRIXX
+    global MATRIXY
+    global SWAPPF
+    global NEX
+    global B4PAUSE
+    global CONTRAST
+    global CONTAG
+    global CONTAM
+    global TBLDELTA
+    global PHASEFOV
+    global RBW
+    global RBW2
+    global AUTOSHIM
+    global PHASECORR
+    global AUTOCF
+    global FLDIR
+    global NUMOPTEMPPHASES
+    global DELMASKACQ
+    global PAUSEDELMASKACQ
+    global MX_PROT
+    global AUTOSUBOPTIONS
+    global AUTOSCIC
+    global TOTALNOSTATION
+    global STATION
+    set ENTRY "Head First"
+    set POSITION "Supine"
+    set ANREF "NA"
+    set COIL "8HRBRAIN"
+    set PLANE "OBLIQUE"
+    set SEDESCFLAG "1"
+    set SEDESC "AX T2 FLAIR 4mm 256 TE120"
+    set GRADMODE ""
+    set IMODE "2D"
+    set PSEQ "T2flair"
+    set IOPT "FC, TRF, Fast, ZIP512"
+    set PLUG "25"
+    set PSDNAME ""
+    set MONSAR "y"
+    set IEC_ACCEPT ""
+    set FILTCHOICE "None"
+    set BWRT "-1"
+    set SLPERLOC ""
+    set ACQORDER ""
+    set DELACQ ""
+    set NUMSEGMENT ""
+    set SATLOCX1 ""
+    set SATLOCX2 ""
+    set SATLOCY1 ""
+    set SATLOCY2 ""
+    set SATLOCZ1 ""
+    set SATLOCZ2 ""
+    set SATTHICKX1 ""
+    set SATTHICKX2 ""
+    set SATTHICKY1 ""
+    set SATTHICKY2 ""
+    set SATTHICKZ1 ""
+    set SATTHICKZ2 ""
+    set CONCATSAT ""
+    set TAG_SPACE "7"
+    set TAG_TYPE "None"
+    set SUPPTQ ""
+    set COLLAPSE ""
+    set PROJECTION ""
+    set FLAX ""
+    set ADDLIMG ""
+    set FLRECON ""
+    set RAMPPULSE ""
+    set VENC ""
+    set USERCV0 ""
+    set USERCV1 ""
+    set USERCV2 ""
+    set USERCV3 "2.00"
+    set USERCV4 ""
+    set USERCV5 ""
+    set USERCV6 ""
+    set USERCV7 ""
+    set USERCV8 ""
+    set USERCV9 ""
+    set USERCV10 ""
+    set USERCV11 ""
+    set USERCV12 ""
+    set USERCV13 ""
+    set USERCV14 ""
+    set USERCV15 ""
+    set USERCV16 ""
+    set USERCV17 ""
+    set USERCV18 ""
+    set USERCV19 ""
+    set USERCV20 ""
+    set USERCV21 ""
+    set USERCV22 ""
+    set USERCV23 ""
+    set USERCV24 ""
+    set USERCV_MASK "8"
+    set BVALUE ""
+    set OPTIMIZED_TE ""
+    set DFAX ""
+    set DIFNUMDIRS ""
+    set DIFNUMT2 ""
+    set DUALSPINECHO ""
+    set DIFPROCTYPE ""
+    set REOPT ""
+    set FLIPANG ""
+    set TE "120.0"
+    set TE2 ""
+    set NECHO "1"
+    set TR "8475.0"
+    set TI "2000"
+    set ETL ""
+    set NUMSHOTS ""
+    set BSP_TI ""
+    set BPM ""
+    set AUTOTRGTYPE "0"
+    set TRGTYPE ""
+    set PDGMSTR "None"
+    set PDGMUID ""
+    set INITSTATE ""
+    set PSDTRIG ""
+    set SLICEORDER ""
+    set VIEWORDER ""
+    set TRREST ""
+    set TRACTIVE ""
+    set DUMACQ ""
+    set REPTIME ""
+    set TDEL ""
+    set MINTDEL ""
+    set AUTOTRIGWIN "0"
+    set TRIGWIN ""
+    set INTRDEL ""
+    set PHASESELECT ""
+    set AUTOCPHASE ""
+    set CPHASE ""
+    set CSLICE ""
+    set VPS ""
+    set RESPRATE ""
+    set RTEFFTR ""
+    set TRIGPOINT ""
+    set RESPTRGWIN ""
+    set RESPINTRDEL ""
+    set FOV "24"
+    set SLTHICK "4.0"
+    set SPC "0.0"
+    set SLABLOC ""
+    set OVLPLOC ""
+    set GRXOPT ""
+    set SLOC1 "0.0"
+    set SLOC2 "A16.8"
+    set SLOC3 "I72.6"
+    set ELOC1 "0.0"
+    set ELOC2 "A16.9"
+    set ELOC3 "S67.4"
+    set CLOC1 ""
+    set CLOC2 ""
+    set CLOC3 ""
+    set SL3PLANE ""
+    set FOVCNT1 ""
+    set FOVCNT2 ""
+    set SCANLOCS ""
+    set NOSLC "36"
+    set SP_SLOC1 ""
+    set SP_SLOC2 ""
+    set SP_SLOC3 ""
+    set SP_ELOC1 ""
+    set SP_ELOC2 ""
+    set SP_ELOC3 ""
+    set TRACKLEN ""
+    set TRACKTHICK ""
+    set CINEPHASE ""
+    set CINESLICE ""
+    set MATRIXX "256"
+    set MATRIXY "128"
+    set SWAPPF "A/P"
+    set NEX "1.00"
+    set B4PAUSE ""
+    set CONTRAST "No"
+    set CONTAG ""
+    set CONTAM "Yes   "
+    set TBLDELTA "0.00"
+    set PHASEFOV ""
+    set RBW "25.00"
+    set RBW2 ""
+    set AUTOSHIM "Yes"
+    set PHASECORR "No"
+    set AUTOCF "Water"
+    set FLDIR "Freq"
+    set NUMOPTEMPPHASES ""
+    set DELMASKACQ ""
+    set PAUSEDELMASKACQ "1"
+    set MX_PROT ""
+    set AUTOSUBOPTIONS "0"
+    set AUTOSCIC "1"
+    set TOTALNOSTATION "0"
+    set STATION "0"
+}
+proc series5 {} {
+    global ENTRY
+    global POSITION
+    global ANREF
+    global COIL
+    global PLANE
+    global SEDESCFLAG
+    global SEDESC
+    global GRADMODE
+    global IMODE
+    global PSEQ
+    global IOPT
+    global PLUG
+    global PSDNAME
+    global MONSAR
+    global IEC_ACCEPT
+    global FILTCHOICE
+    global BWRT
+    global SLPERLOC
+    global ACQORDER
+    global DELACQ
+    global NUMSEGMENT
+    global SATLOCX1
+    global SATLOCX2
+    global SATLOCY1
+    global SATLOCY2
+    global SATLOCZ1
+    global SATLOCZ2
+    global SATTHICKX1
+    global SATTHICKX2
+    global SATTHICKY1
+    global SATTHICKY2
+    global SATTHICKZ1
+    global SATTHICKZ2
+    global CONCATSAT
+    global TAG_SPACE
+    global TAG_TYPE
+    global SUPPTQ
+    global COLLAPSE
+    global PROJECTION
+    global FLAX
+    global ADDLIMG
+    global FLRECON
+    global RAMPPULSE
+    global VENC
+    global USERCV0
+    global USERCV1
+    global USERCV2
+    global USERCV3
+    global USERCV4
+    global USERCV5
+    global USERCV6
+    global USERCV7
+    global USERCV8
+    global USERCV9
+    global USERCV10
+    global USERCV11
+    global USERCV12
+    global USERCV13
+    global USERCV14
+    global USERCV15
+    global USERCV16
+    global USERCV17
+    global USERCV18
+    global USERCV19
+    global USERCV20
+    global USERCV21
+    global USERCV22
+    global USERCV23
+    global USERCV24
+    global USERCV_MASK
+    global BVALUE
+    global OPTIMIZED_TE
+    global DFAX
+    global DIFNUMDIRS
+    global DIFNUMT2
+    global DUALSPINECHO
+    global DIFPROCTYPE
+    global REOPT
+    global FLIPANG
+    global TE
+    global TE2
+    global NECHO
+    global TR
+    global TI
+    global ETL
+    global NUMSHOTS
+    global BSP_TI
+    global BPM
+    global AUTOTRGTYPE
+    global TRGTYPE
+    global PDGMSTR
+    global PDGMUID
+    global INITSTATE
+    global PSDTRIG
+    global SLICEORDER
+    global VIEWORDER
+    global TRREST
+    global TRACTIVE
+    global DUMACQ
+    global REPTIME
+    global TDEL
+    global MINTDEL
+    global AUTOTRIGWIN
+    global TRIGWIN
+    global INTRDEL
+    global PHASESELECT
+    global AUTOCPHASE
+    global CPHASE
+    global CSLICE
+    global VPS
+    global RESPRATE
+    global RTEFFTR
+    global TRIGPOINT
+    global RESPTRGWIN
+    global RESPINTRDEL
+    global FOV
+    global SLTHICK
+    global SPC
+    global SLABLOC
+    global OVLPLOC
+    global GRXOPT
+    global SLOC1
+    global SLOC2
+    global SLOC3
+    global ELOC1
+    global ELOC2
+    global ELOC3
+    global CLOC1
+    global CLOC2
+    global CLOC3
+    global SL3PLANE
+    global FOVCNT1
+    global FOVCNT2
+    global SCANLOCS
+    global NOSLC
+    global SP_SLOC1
+    global SP_SLOC2
+    global SP_SLOC3
+    global SP_ELOC1
+    global SP_ELOC2
+    global SP_ELOC3
+    global TRACKLEN
+    global TRACKTHICK
+    global CINEPHASE
+    global CINESLICE
+    global MATRIXX
+    global MATRIXY
+    global SWAPPF
+    global NEX
+    global B4PAUSE
+    global CONTRAST
+    global CONTAG
+    global CONTAM
+    global TBLDELTA
+    global PHASEFOV
+    global RBW
+    global RBW2
+    global AUTOSHIM
+    global PHASECORR
+    global AUTOCF
+    global FLDIR
+    global NUMOPTEMPPHASES
+    global DELMASKACQ
+    global PAUSEDELMASKACQ
+    global MX_PROT
+    global AUTOSUBOPTIONS
+    global AUTOSCIC
+    global TOTALNOSTATION
+    global STATION
+    set ENTRY "Head First"
+    set POSITION "Supine"
+    set ANREF ""
+    set COIL "8HRBRAIN"
+    set PLANE "SAGITTAL"
+    set SEDESCFLAG "1"
+    set SEDESC "MP-RAGE"
+    set GRADMODE ""
+    set IMODE "3D"
+    set PSEQ "SPGR"
+    set IOPT "EDR, Fast, IrP"
+    set PLUG "6"
+    set PSDNAME "adni"
+    set MONSAR "y"
+    set IEC_ACCEPT ""
+    set FILTCHOICE "None"
+    set BWRT "-1"
+    set SLPERLOC ""
+    set ACQORDER ""
+    set DELACQ ""
+    set NUMSEGMENT ""
+    set SATLOCX1 ""
+    set SATLOCX2 ""
+    set SATLOCY1 ""
+    set SATLOCY2 ""
+    set SATLOCZ1 ""
+    set SATLOCZ2 ""
+    set SATTHICKX1 ""
+    set SATTHICKX2 ""
+    set SATTHICKY1 ""
+    set SATTHICKY2 ""
+    set SATTHICKZ1 ""
+    set SATTHICKZ2 ""
+    set CONCATSAT ""
+    set TAG_SPACE "7"
+    set TAG_TYPE "None"
+    set SUPPTQ ""
+    set COLLAPSE ""
+    set PROJECTION ""
+    set FLAX ""
+    set ADDLIMG ""
+    set FLRECON ""
+    set RAMPPULSE ""
+    set VENC ""
+    set USERCV0 ""
+    set USERCV1 ""
+    set USERCV2 ""
+    set USERCV3 ""
+    set USERCV4 ""
+    set USERCV5 ""
+    set USERCV6 "1.00"
+    set USERCV7 ""
+    set USERCV8 "1.00"
+    set USERCV9 "1.00"
+    set USERCV10 ""
+    set USERCV11 ""
+    set USERCV12 ""
+    set USERCV13 ""
+    set USERCV14 ""
+    set USERCV15 ""
+    set USERCV16 ""
+    set USERCV17 ""
+    set USERCV18 ""
+    set USERCV19 ""
+    set USERCV20 ""
+    set USERCV21 ""
+    set USERCV22 ""
+    set USERCV23 "1.00"
+    set USERCV24 "2300.00"
+    set USERCV_MASK "25166656"
+    set BVALUE ""
+    set OPTIMIZED_TE ""
+    set DFAX ""
+    set DIFNUMDIRS ""
+    set DIFNUMT2 ""
+    set DUALSPINECHO ""
+    set DIFPROCTYPE ""
+    set REOPT ""
+    set FLIPANG "8"
+    set TE "Min Full"
+    set TE2 ""
+    set NECHO "1"
+    set TR ""
+    set TI "900"
+    set ETL ""
+    set NUMSHOTS ""
+    set BSP_TI ""
+    set BPM ""
+    set AUTOTRGTYPE "0"
+    set TRGTYPE ""
+    set PDGMSTR "None"
+    set PDGMUID ""
+    set INITSTATE ""
+    set PSDTRIG ""
+    set SLICEORDER ""
+    set VIEWORDER ""
+    set TRREST ""
+    set TRACTIVE ""
+    set DUMACQ ""
+    set REPTIME ""
+    set TDEL ""
+    set MINTDEL ""
+    set AUTOTRIGWIN "0"
+    set TRIGWIN ""
+    set INTRDEL ""
+    set PHASESELECT ""
+    set AUTOCPHASE ""
+    set CPHASE ""
+    set CSLICE ""
+    set VPS ""
+    set RESPRATE ""
+    set RTEFFTR ""
+    set TRIGPOINT ""
+    set RESPTRGWIN ""
+    set RESPINTRDEL ""
+    set FOV "28"
+    set SLTHICK "1.1"
+    set SPC ""
+    set SLABLOC "170"
+    set OVLPLOC "0"
+    set GRXOPT ""
+    set SLOC1 "L99.0"
+    set SLOC2 ""
+    set SLOC3 ""
+    set ELOC1 "R99.0"
+    set ELOC2 "0.0"
+    set ELOC3 "0.0"
+    set CLOC1 ""
+    set CLOC2 ""
+    set CLOC3 ""
+    set SL3PLANE ""
+    set FOVCNT1 "A16.5"
+    set FOVCNT2 "0.0"
+    set SCANLOCS ""
+    set NOSLC "1"
+    set SP_SLOC1 ""
+    set SP_SLOC2 ""
+    set SP_SLOC3 ""
+    set SP_ELOC1 ""
+    set SP_ELOC2 ""
+    set SP_ELOC3 ""
+    set TRACKLEN ""
+    set TRACKTHICK ""
+    set CINEPHASE ""
+    set CINESLICE ""
+    set MATRIXX "256"
+    set MATRIXY "256"
+    set SWAPPF "S/I"
+    set NEX "1.00"
+    set B4PAUSE ""
+    set CONTRAST "No"
+    set CONTAG ""
+    set CONTAM "Yes   "
+    set TBLDELTA "0.00"
+    set PHASEFOV "0.94"
+    set RBW "31.25"
+    set RBW2 ""
+    set AUTOSHIM "Yes"
+    set PHASECORR "No"
+    set AUTOCF "Water"
+    set FLDIR ""
+    set NUMOPTEMPPHASES ""
+    set DELMASKACQ ""
+    set PAUSEDELMASKACQ "1"
+    set MX_PROT ""
+    set AUTOSUBOPTIONS "0"
+    set AUTOSCIC "0"
+    set TOTALNOSTATION "0"
+    set STATION "0"
+}
+proc series6 {} {
+    global ENTRY
+    global POSITION
+    global ANREF
+    global COIL
+    global PLANE
+    global SEDESCFLAG
+    global SEDESC
+    global GRADMODE
+    global IMODE
+    global PSEQ
+    global IOPT
+    global PLUG
+    global PSDNAME
+    global MONSAR
+    global IEC_ACCEPT
+    global FILTCHOICE
+    global BWRT
+    global SLPERLOC
+    global ACQORDER
+    global DELACQ
+    global NUMSEGMENT
+    global SATLOCX1
+    global SATLOCX2
+    global SATLOCY1
+    global SATLOCY2
+    global SATLOCZ1
+    global SATLOCZ2
+    global SATTHICKX1
+    global SATTHICKX2
+    global SATTHICKY1
+    global SATTHICKY2
+    global SATTHICKZ1
+    global SATTHICKZ2
+    global CONCATSAT
+    global TAG_SPACE
+    global TAG_TYPE
+    global SUPPTQ
+    global COLLAPSE
+    global PROJECTION
+    global FLAX
+    global ADDLIMG
+    global FLRECON
+    global RAMPPULSE
+    global VENC
+    global USERCV0
+    global USERCV1
+    global USERCV2
+    global USERCV3
+    global USERCV4
+    global USERCV5
+    global USERCV6
+    global USERCV7
+    global USERCV8
+    global USERCV9
+    global USERCV10
+    global USERCV11
+    global USERCV12
+    global USERCV13
+    global USERCV14
+    global USERCV15
+    global USERCV16
+    global USERCV17
+    global USERCV18
+    global USERCV19
+    global USERCV20
+    global USERCV21
+    global USERCV22
+    global USERCV23
+    global USERCV24
+    global USERCV_MASK
+    global BVALUE
+    global OPTIMIZED_TE
+    global DFAX
+    global DIFNUMDIRS
+    global DIFNUMT2
+    global DUALSPINECHO
+    global DIFPROCTYPE
+    global REOPT
+    global FLIPANG
+    global TE
+    global TE2
+    global NECHO
+    global TR
+    global TI
+    global ETL
+    global NUMSHOTS
+    global BSP_TI
+    global BPM
+    global AUTOTRGTYPE
+    global TRGTYPE
+    global PDGMSTR
+    global PDGMUID
+    global INITSTATE
+    global PSDTRIG
+    global SLICEORDER
+    global VIEWORDER
+    global TRREST
+    global TRACTIVE
+    global DUMACQ
+    global REPTIME
+    global TDEL
+    global MINTDEL
+    global AUTOTRIGWIN
+    global TRIGWIN
+    global INTRDEL
+    global PHASESELECT
+    global AUTOCPHASE
+    global CPHASE
+    global CSLICE
+    global VPS
+    global RESPRATE
+    global RTEFFTR
+    global TRIGPOINT
+    global RESPTRGWIN
+    global RESPINTRDEL
+    global FOV
+    global SLTHICK
+    global SPC
+    global SLABLOC
+    global OVLPLOC
+    global GRXOPT
+    global SLOC1
+    global SLOC2
+    global SLOC3
+    global ELOC1
+    global ELOC2
+    global ELOC3
+    global CLOC1
+    global CLOC2
+    global CLOC3
+    global SL3PLANE
+    global FOVCNT1
+    global FOVCNT2
+    global SCANLOCS
+    global NOSLC
+    global SP_SLOC1
+    global SP_SLOC2
+    global SP_SLOC3
+    global SP_ELOC1
+    global SP_ELOC2
+    global SP_ELOC3
+    global TRACKLEN
+    global TRACKTHICK
+    global CINEPHASE
+    global CINESLICE
+    global MATRIXX
+    global MATRIXY
+    global SWAPPF
+    global NEX
+    global B4PAUSE
+    global CONTRAST
+    global CONTAG
+    global CONTAM
+    global TBLDELTA
+    global PHASEFOV
+    global RBW
+    global RBW2
+    global AUTOSHIM
+    global PHASECORR
+    global AUTOCF
+    global FLDIR
+    global NUMOPTEMPPHASES
+    global DELMASKACQ
+    global PAUSEDELMASKACQ
+    global MX_PROT
+    global AUTOSUBOPTIONS
+    global AUTOSCIC
+    global TOTALNOSTATION
+    global STATION
+    set ENTRY "Head First"
+    set POSITION "Supine"
+    set ANREF ""
+    set COIL "8HRBRAIN"
+    set PLANE "OBLIQUE"
+    set SEDESCFLAG "1"
+    set SEDESC "DTI 128x128 32dir"
+    set GRADMODE ""
+    set IMODE "2D"
+    set PSEQ "Spin Echo"
+    set IOPT "EPI, DIFF, Asset"
+    set PLUG "8"
+    set PSDNAME "/usr/g/bin/dti_IMAGEN"
+    set MONSAR "y"
+    set IEC_ACCEPT ""
+    set FILTCHOICE "None"
+    set BWRT "-1"
+    set SLPERLOC ""
+    set ACQORDER ""
+    set DELACQ ""
+    set NUMSEGMENT ""
+    set SATLOCX1 ""
+    set SATLOCX2 ""
+    set SATLOCY1 ""
+    set SATLOCY2 ""
+    set SATLOCZ1 ""
+    set SATLOCZ2 ""
+    set SATTHICKX1 ""
+    set SATTHICKX2 ""
+    set SATTHICKY1 ""
+    set SATTHICKY2 ""
+    set SATTHICKZ1 ""
+    set SATTHICKZ2 ""
+    set CONCATSAT ""
+    set TAG_SPACE "7"
+    set TAG_TYPE "None"
+    set SUPPTQ "1"
+    set COLLAPSE ""
+    set PROJECTION ""
+    set FLAX ""
+    set ADDLIMG ""
+    set FLRECON ""
+    set RAMPPULSE ""
+    set VENC ""
+    set USERCV0 ""
+    set USERCV1 ""
+    set USERCV2 ""
+    set USERCV3 ""
+    set USERCV4 ""
+    set USERCV5 ""
+    set USERCV6 "0.00"
+    set USERCV7 ""
+    set USERCV8 ""
+    set USERCV9 ""
+    set USERCV10 "0.00"
+    set USERCV11 ""
+    set USERCV12 ""
+    set USERCV13 ""
+    set USERCV14 ""
+    set USERCV15 ""
+    set USERCV16 ""
+    set USERCV17 ""
+    set USERCV18 ""
+    set USERCV19 ""
+    set USERCV20 ""
+    set USERCV21 ""
+    set USERCV22 ""
+    set USERCV23 ""
+    set USERCV24 ""
+    set USERCV_MASK "1088"
+    set BVALUE "1300"
+    set OPTIMIZED_TE "No"
+    set DFAX "16"
+    set DIFNUMDIRS "9"
+    set DIFNUMT2 "1"
+    set DUALSPINECHO "1"
+    set DIFPROCTYPE "0"
+    set REOPT "2"
+    set FLIPANG ""
+    set TE "Minimum"
+    set TE2 ""
+    set NECHO ""
+    set TR "16000.0"
+    set TI ""
+    set ETL ""
+    set NUMSHOTS "1"
+    set BSP_TI ""
+    set BPM ""
+    set AUTOTRGTYPE "0"
+    set TRGTYPE ""
+    set PDGMSTR ""
+    set PDGMUID ""
+    set INITSTATE ""
+    set PSDTRIG ""
+    set SLICEORDER ""
+    set VIEWORDER ""
+    set TRREST ""
+    set TRACTIVE ""
+    set DUMACQ ""
+    set REPTIME ""
+    set TDEL ""
+    set MINTDEL ""
+    set AUTOTRIGWIN "0"
+    set TRIGWIN ""
+    set INTRDEL ""
+    set PHASESELECT ""
+    set AUTOCPHASE ""
+    set CPHASE ""
+    set CSLICE ""
+    set VPS ""
+    set RESPRATE ""
+    set RTEFFTR ""
+    set TRIGPOINT ""
+    set RESPTRGWIN ""
+    set RESPINTRDEL ""
+    set FOV "30"
+    set SLTHICK "2.4"
+    set SPC "0.0"
+    set SLABLOC ""
+    set OVLPLOC ""
+    set GRXOPT ""
+    set SLOC1 "0.0"
+    set SLOC2 "0.0"
+    set SLOC3 "0.0"
+    set ELOC1 "R10.0"
+    set ELOC2 "A10.0"
+    set ELOC3 "S10.0"
+    set CLOC1 ""
+    set CLOC2 ""
+    set CLOC3 ""
+    set SL3PLANE ""
+    set FOVCNT1 ""
+    set FOVCNT2 ""
+    set SCANLOCS ""
+    set NOSLC "60"
+    set SP_SLOC1 ""
+    set SP_SLOC2 ""
+    set SP_SLOC3 ""
+    set SP_ELOC1 ""
+    set SP_ELOC2 ""
+    set SP_ELOC3 ""
+    set TRACKLEN ""
+    set TRACKTHICK ""
+    set CINEPHASE ""
+    set CINESLICE ""
+    set MATRIXX "128"
+    set MATRIXY "128"
+    set SWAPPF "R/L"
+    set NEX "1.00"
+    set B4PAUSE ""
+    set CONTRAST "No"
+    set CONTAG ""
+    set CONTAM "Yes   "
+    set TBLDELTA "0.00"
+    set PHASEFOV "1.00"
+    set RBW ""
+    set RBW2 ""
+    set AUTOSHIM "Yes"
+    set PHASECORR "Yes"
+    set AUTOCF "Water"
+    set FLDIR ""
+    set NUMOPTEMPPHASES ""
+    set DELMASKACQ ""
+    set PAUSEDELMASKACQ "1"
+    set MX_PROT ""
+    set AUTOSUBOPTIONS "0"
+    set AUTOSCIC "0"
+    set TOTALNOSTATION "0"
+    set STATION "0"
+}
+proc series7 {} {
+    global ENTRY
+    global POSITION
+    global ANREF
+    global COIL
+    global PLANE
+    global SEDESCFLAG
+    global SEDESC
+    global GRADMODE
+    global IMODE
+    global PSEQ
+    global IOPT
+    global PLUG
+    global PSDNAME
+    global MONSAR
+    global IEC_ACCEPT
+    global FILTCHOICE
+    global BWRT
+    global SLPERLOC
+    global ACQORDER
+    global DELACQ
+    global NUMSEGMENT
+    global SATLOCX1
+    global SATLOCX2
+    global SATLOCY1
+    global SATLOCY2
+    global SATLOCZ1
+    global SATLOCZ2
+    global SATTHICKX1
+    global SATTHICKX2
+    global SATTHICKY1
+    global SATTHICKY2
+    global SATTHICKZ1
+    global SATTHICKZ2
+    global CONCATSAT
+    global TAG_SPACE
+    global TAG_TYPE
+    global SUPPTQ
+    global COLLAPSE
+    global PROJECTION
+    global FLAX
+    global ADDLIMG
+    global FLRECON
+    global RAMPPULSE
+    global VENC
+    global USERCV0
+    global USERCV1
+    global USERCV2
+    global USERCV3
+    global USERCV4
+    global USERCV5
+    global USERCV6
+    global USERCV7
+    global USERCV8
+    global USERCV9
+    global USERCV10
+    global USERCV11
+    global USERCV12
+    global USERCV13
+    global USERCV14
+    global USERCV15
+    global USERCV16
+    global USERCV17
+    global USERCV18
+    global USERCV19
+    global USERCV20
+    global USERCV21
+    global USERCV22
+    global USERCV23
+    global USERCV24
+    global USERCV_MASK
+    global BVALUE
+    global OPTIMIZED_TE
+    global DFAX
+    global DIFNUMDIRS
+    global DIFNUMT2
+    global DUALSPINECHO
+    global DIFPROCTYPE
+    global REOPT
+    global FLIPANG
+    global TE
+    global TE2
+    global NECHO
+    global TR
+    global TI
+    global ETL
+    global NUMSHOTS
+    global BSP_TI
+    global BPM
+    global AUTOTRGTYPE
+    global TRGTYPE
+    global PDGMSTR
+    global PDGMUID
+    global INITSTATE
+    global PSDTRIG
+    global SLICEORDER
+    global VIEWORDER
+    global TRREST
+    global TRACTIVE
+    global DUMACQ
+    global REPTIME
+    global TDEL
+    global MINTDEL
+    global AUTOTRIGWIN
+    global TRIGWIN
+    global INTRDEL
+    global PHASESELECT
+    global AUTOCPHASE
+    global CPHASE
+    global CSLICE
+    global VPS
+    global RESPRATE
+    global RTEFFTR
+    global TRIGPOINT
+    global RESPTRGWIN
+    global RESPINTRDEL
+    global FOV
+    global SLTHICK
+    global SPC
+    global SLABLOC
+    global OVLPLOC
+    global GRXOPT
+    global SLOC1
+    global SLOC2
+    global SLOC3
+    global ELOC1
+    global ELOC2
+    global ELOC3
+    global CLOC1
+    global CLOC2
+    global CLOC3
+    global SL3PLANE
+    global FOVCNT1
+    global FOVCNT2
+    global SCANLOCS
+    global NOSLC
+    global SP_SLOC1
+    global SP_SLOC2
+    global SP_SLOC3
+    global SP_ELOC1
+    global SP_ELOC2
+    global SP_ELOC3
+    global TRACKLEN
+    global TRACKTHICK
+    global CINEPHASE
+    global CINESLICE
+    global MATRIXX
+    global MATRIXY
+    global SWAPPF
+    global NEX
+    global B4PAUSE
+    global CONTRAST
+    global CONTAG
+    global CONTAM
+    global TBLDELTA
+    global PHASEFOV
+    global RBW
+    global RBW2
+    global AUTOSHIM
+    global PHASECORR
+    global AUTOCF
+    global FLDIR
+    global NUMOPTEMPPHASES
+    global DELMASKACQ
+    global PAUSEDELMASKACQ
+    global MX_PROT
+    global AUTOSUBOPTIONS
+    global AUTOSCIC
+    global TOTALNOSTATION
+    global STATION
+    set ENTRY "Head First"
+    set POSITION "Supine"
+    set ANREF ""
+    set COIL "8HRBRAIN"
+    set PLANE "OBLIQUE"
+    set SEDESCFLAG "1"
+    set SEDESC "DTI 128x128 32dir"
+    set GRADMODE ""
+    set IMODE "2D"
+    set PSEQ "Spin Echo"
+    set IOPT "EPI, DIFF, Asset"
+    set PLUG "8"
+    set PSDNAME "/usr/g/bin/dti_IMAGEN"
+    set MONSAR "y"
+    set IEC_ACCEPT ""
+    set FILTCHOICE "None"
+    set BWRT "-1"
+    set SLPERLOC ""
+    set ACQORDER ""
+    set DELACQ ""
+    set NUMSEGMENT ""
+    set SATLOCX1 ""
+    set SATLOCX2 ""
+    set SATLOCY1 ""
+    set SATLOCY2 ""
+    set SATLOCZ1 ""
+    set SATLOCZ2 ""
+    set SATTHICKX1 ""
+    set SATTHICKX2 ""
+    set SATTHICKY1 ""
+    set SATTHICKY2 ""
+    set SATTHICKZ1 ""
+    set SATTHICKZ2 ""
+    set CONCATSAT ""
+    set TAG_SPACE "7"
+    set TAG_TYPE "None"
+    set SUPPTQ "1"
+    set COLLAPSE ""
+    set PROJECTION ""
+    set FLAX ""
+    set ADDLIMG ""
+    set FLRECON ""
+    set RAMPPULSE ""
+    set VENC ""
+    set USERCV0 ""
+    set USERCV1 ""
+    set USERCV2 ""
+    set USERCV3 ""
+    set USERCV4 ""
+    set USERCV5 ""
+    set USERCV6 "0.00"
+    set USERCV7 ""
+    set USERCV8 ""
+    set USERCV9 ""
+    set USERCV10 "0.00"
+    set USERCV11 ""
+    set USERCV12 ""
+    set USERCV13 ""
+    set USERCV14 ""
+    set USERCV15 ""
+    set USERCV16 ""
+    set USERCV17 ""
+    set USERCV18 ""
+    set USERCV19 ""
+    set USERCV20 ""
+    set USERCV21 ""
+    set USERCV22 ""
+    set USERCV23 ""
+    set USERCV24 ""
+    set USERCV_MASK "1088"
+    set BVALUE "1300"
+    set OPTIMIZED_TE "No"
+    set DFAX "16"
+    set DIFNUMDIRS "11"
+    set DIFNUMT2 "1"
+    set DUALSPINECHO "1"
+    set DIFPROCTYPE "0"
+    set REOPT "2"
+    set FLIPANG ""
+    set TE "Minimum"
+    set TE2 ""
+    set NECHO ""
+    set TR "16000.0"
+    set TI ""
+    set ETL ""
+    set NUMSHOTS "1"
+    set BSP_TI ""
+    set BPM ""
+    set AUTOTRGTYPE "0"
+    set TRGTYPE ""
+    set PDGMSTR ""
+    set PDGMUID ""
+    set INITSTATE ""
+    set PSDTRIG ""
+    set SLICEORDER ""
+    set VIEWORDER ""
+    set TRREST ""
+    set TRACTIVE ""
+    set DUMACQ ""
+    set REPTIME ""
+    set TDEL ""
+    set MINTDEL ""
+    set AUTOTRIGWIN "0"
+    set TRIGWIN ""
+    set INTRDEL ""
+    set PHASESELECT ""
+    set AUTOCPHASE ""
+    set CPHASE ""
+    set CSLICE ""
+    set VPS ""
+    set RESPRATE ""
+    set RTEFFTR ""
+    set TRIGPOINT ""
+    set RESPTRGWIN ""
+    set RESPINTRDEL ""
+    set FOV "30"
+    set SLTHICK "2.4"
+    set SPC "0.0"
+    set SLABLOC ""
+    set OVLPLOC ""
+    set GRXOPT ""
+    set SLOC1 "0.0"
+    set SLOC2 "0.0"
+    set SLOC3 "0.0"
+    set ELOC1 "R10.0"
+    set ELOC2 "A10.0"
+    set ELOC3 "S10.0"
+    set CLOC1 ""
+    set CLOC2 ""
+    set CLOC3 ""
+    set SL3PLANE ""
+    set FOVCNT1 ""
+    set FOVCNT2 ""
+    set SCANLOCS ""
+    set NOSLC "60"
+    set SP_SLOC1 ""
+    set SP_SLOC2 ""
+    set SP_SLOC3 ""
+    set SP_ELOC1 ""
+    set SP_ELOC2 ""
+    set SP_ELOC3 ""
+    set TRACKLEN ""
+    set TRACKTHICK ""
+    set CINEPHASE ""
+    set CINESLICE ""
+    set MATRIXX "128"
+    set MATRIXY "128"
+    set SWAPPF "R/L"
+    set NEX "1.00"
+    set B4PAUSE ""
+    set CONTRAST "No"
+    set CONTAG ""
+    set CONTAM "Yes   "
+    set TBLDELTA "0.00"
+    set PHASEFOV "1.00"
+    set RBW ""
+    set RBW2 ""
+    set AUTOSHIM "Yes"
+    set PHASECORR "Yes"
+    set AUTOCF "Water"
+    set FLDIR ""
+    set NUMOPTEMPPHASES ""
+    set DELMASKACQ ""
+    set PAUSEDELMASKACQ "1"
+    set MX_PROT ""
+    set AUTOSUBOPTIONS "0"
+    set AUTOSCIC "0"
+    set TOTALNOSTATION "0"
+    set STATION "0"
+}
+proc series8 {} {
+    global ENTRY
+    global POSITION
+    global ANREF
+    global COIL
+    global PLANE
+    global SEDESCFLAG
+    global SEDESC
+    global GRADMODE
+    global IMODE
+    global PSEQ
+    global IOPT
+    global PLUG
+    global PSDNAME
+    global MONSAR
+    global IEC_ACCEPT
+    global FILTCHOICE
+    global BWRT
+    global SLPERLOC
+    global ACQORDER
+    global DELACQ
+    global NUMSEGMENT
+    global SATLOCX1
+    global SATLOCX2
+    global SATLOCY1
+    global SATLOCY2
+    global SATLOCZ1
+    global SATLOCZ2
+    global SATTHICKX1
+    global SATTHICKX2
+    global SATTHICKY1
+    global SATTHICKY2
+    global SATTHICKZ1
+    global SATTHICKZ2
+    global CONCATSAT
+    global TAG_SPACE
+    global TAG_TYPE
+    global SUPPTQ
+    global COLLAPSE
+    global PROJECTION
+    global FLAX
+    global ADDLIMG
+    global FLRECON
+    global RAMPPULSE
+    global VENC
+    global USERCV0
+    global USERCV1
+    global USERCV2
+    global USERCV3
+    global USERCV4
+    global USERCV5
+    global USERCV6
+    global USERCV7
+    global USERCV8
+    global USERCV9
+    global USERCV10
+    global USERCV11
+    global USERCV12
+    global USERCV13
+    global USERCV14
+    global USERCV15
+    global USERCV16
+    global USERCV17
+    global USERCV18
+    global USERCV19
+    global USERCV20
+    global USERCV21
+    global USERCV22
+    global USERCV23
+    global USERCV24
+    global USERCV_MASK
+    global BVALUE
+    global OPTIMIZED_TE
+    global DFAX
+    global DIFNUMDIRS
+    global DIFNUMT2
+    global DUALSPINECHO
+    global DIFPROCTYPE
+    global REOPT
+    global FLIPANG
+    global TE
+    global TE2
+    global NECHO
+    global TR
+    global TI
+    global ETL
+    global NUMSHOTS
+    global BSP_TI
+    global BPM
+    global AUTOTRGTYPE
+    global TRGTYPE
+    global PDGMSTR
+    global PDGMUID
+    global INITSTATE
+    global PSDTRIG
+    global SLICEORDER
+    global VIEWORDER
+    global TRREST
+    global TRACTIVE
+    global DUMACQ
+    global REPTIME
+    global TDEL
+    global MINTDEL
+    global AUTOTRIGWIN
+    global TRIGWIN
+    global INTRDEL
+    global PHASESELECT
+    global AUTOCPHASE
+    global CPHASE
+    global CSLICE
+    global VPS
+    global RESPRATE
+    global RTEFFTR
+    global TRIGPOINT
+    global RESPTRGWIN
+    global RESPINTRDEL
+    global FOV
+    global SLTHICK
+    global SPC
+    global SLABLOC
+    global OVLPLOC
+    global GRXOPT
+    global SLOC1
+    global SLOC2
+    global SLOC3
+    global ELOC1
+    global ELOC2
+    global ELOC3
+    global CLOC1
+    global CLOC2
+    global CLOC3
+    global SL3PLANE
+    global FOVCNT1
+    global FOVCNT2
+    global SCANLOCS
+    global NOSLC
+    global SP_SLOC1
+    global SP_SLOC2
+    global SP_SLOC3
+    global SP_ELOC1
+    global SP_ELOC2
+    global SP_ELOC3
+    global TRACKLEN
+    global TRACKTHICK
+    global CINEPHASE
+    global CINESLICE
+    global MATRIXX
+    global MATRIXY
+    global SWAPPF
+    global NEX
+    global B4PAUSE
+    global CONTRAST
+    global CONTAG
+    global CONTAM
+    global TBLDELTA
+    global PHASEFOV
+    global RBW
+    global RBW2
+    global AUTOSHIM
+    global PHASECORR
+    global AUTOCF
+    global FLDIR
+    global NUMOPTEMPPHASES
+    global DELMASKACQ
+    global PAUSEDELMASKACQ
+    global MX_PROT
+    global AUTOSUBOPTIONS
+    global AUTOSCIC
+    global TOTALNOSTATION
+    global STATION
+    set ENTRY "Head First"
+    set POSITION "Supine"
+    set ANREF ""
+    set COIL "8HRBRAIN"
+    set PLANE "OBLIQUE"
+    set SEDESCFLAG "1"
+    set SEDESC "DTI 128x128 32dir"
+    set GRADMODE ""
+    set IMODE "2D"
+    set PSEQ "Spin Echo"
+    set IOPT "EPI, DIFF, Asset"
+    set PLUG "8"
+    set PSDNAME "/usr/g/bin/dti_IMAGEN"
+    set MONSAR "y"
+    set IEC_ACCEPT ""
+    set FILTCHOICE "None"
+    set BWRT "-1"
+    set SLPERLOC ""
+    set ACQORDER ""
+    set DELACQ ""
+    set NUMSEGMENT ""
+    set SATLOCX1 ""
+    set SATLOCX2 ""
+    set SATLOCY1 ""
+    set SATLOCY2 ""
+    set SATLOCZ1 ""
+    set SATLOCZ2 ""
+    set SATTHICKX1 ""
+    set SATTHICKX2 ""
+    set SATTHICKY1 ""
+    set SATTHICKY2 ""
+    set SATTHICKZ1 ""
+    set SATTHICKZ2 ""
+    set CONCATSAT ""
+    set TAG_SPACE "7"
+    set TAG_TYPE "None"
+    set SUPPTQ "1"
+    set COLLAPSE ""
+    set PROJECTION ""
+    set FLAX ""
+    set ADDLIMG ""
+    set FLRECON ""
+    set RAMPPULSE ""
+    set VENC ""
+    set USERCV0 ""
+    set USERCV1 ""
+    set USERCV2 ""
+    set USERCV3 ""
+    set USERCV4 ""
+    set USERCV5 ""
+    set USERCV6 "0.00"
+    set USERCV7 ""
+    set USERCV8 ""
+    set USERCV9 ""
+    set USERCV10 "0.00"
+    set USERCV11 ""
+    set USERCV12 ""
+    set USERCV13 ""
+    set USERCV14 ""
+    set USERCV15 ""
+    set USERCV16 ""
+    set USERCV17 ""
+    set USERCV18 ""
+    set USERCV19 ""
+    set USERCV20 ""
+    set USERCV21 ""
+    set USERCV22 ""
+    set USERCV23 ""
+    set USERCV24 ""
+    set USERCV_MASK "1088"
+    set BVALUE "1300"
+    set OPTIMIZED_TE "No"
+    set DFAX "16"
+    set DIFNUMDIRS "13"
+    set DIFNUMT2 "1"
+    set DUALSPINECHO "1"
+    set DIFPROCTYPE "0"
+    set REOPT "2"
+    set FLIPANG ""
+    set TE "Minimum"
+    set TE2 ""
+    set NECHO ""
+    set TR "16000.0"
+    set TI ""
+    set ETL ""
+    set NUMSHOTS "1"
+    set BSP_TI ""
+    set BPM ""
+    set AUTOTRGTYPE "0"
+    set TRGTYPE ""
+    set PDGMSTR ""
+    set PDGMUID ""
+    set INITSTATE ""
+    set PSDTRIG ""
+    set SLICEORDER ""
+    set VIEWORDER ""
+    set TRREST ""
+    set TRACTIVE ""
+    set DUMACQ ""
+    set REPTIME ""
+    set TDEL ""
+    set MINTDEL ""
+    set AUTOTRIGWIN "0"
+    set TRIGWIN ""
+    set INTRDEL ""
+    set PHASESELECT ""
+    set AUTOCPHASE ""
+    set CPHASE ""
+    set CSLICE ""
+    set VPS ""
+    set RESPRATE ""
+    set RTEFFTR ""
+    set TRIGPOINT ""
+    set RESPTRGWIN ""
+    set RESPINTRDEL ""
+    set FOV "30"
+    set SLTHICK "2.4"
+    set SPC "0.0"
+    set SLABLOC ""
+    set OVLPLOC ""
+    set GRXOPT ""
+    set SLOC1 "0.0"
+    set SLOC2 "0.0"
+    set SLOC3 "0.0"
+    set ELOC1 "R10.0"
+    set ELOC2 "A10.0"
+    set ELOC3 "S10.0"
+    set CLOC1 ""
+    set CLOC2 ""
+    set CLOC3 ""
+    set SL3PLANE ""
+    set FOVCNT1 ""
+    set FOVCNT2 ""
+    set SCANLOCS ""
+    set NOSLC "60"
+    set SP_SLOC1 ""
+    set SP_SLOC2 ""
+    set SP_SLOC3 ""
+    set SP_ELOC1 ""
+    set SP_ELOC2 ""
+    set SP_ELOC3 ""
+    set TRACKLEN ""
+    set TRACKTHICK ""
+    set CINEPHASE ""
+    set CINESLICE ""
+    set MATRIXX "128"
+    set MATRIXY "128"
+    set SWAPPF "R/L"
+    set NEX "1.00"
+    set B4PAUSE ""
+    set CONTRAST "No"
+    set CONTAG ""
+    set CONTAM "Yes   "
+    set TBLDELTA "0.00"
+    set PHASEFOV "1.00"
+    set RBW ""
+    set RBW2 ""
+    set AUTOSHIM "Yes"
+    set PHASECORR "Yes"
+    set AUTOCF "Water"
+    set FLDIR ""
+    set NUMOPTEMPPHASES ""
+    set DELMASKACQ ""
+    set PAUSEDELMASKACQ "1"
+    set MX_PROT ""
+    set AUTOSUBOPTIONS "0"
+    set AUTOSCIC "0"
+    set TOTALNOSTATION "0"
+    set STATION "0"
+}
